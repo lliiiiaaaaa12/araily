@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Time</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <header class="header">
+      <a href="#" class="logo">Travel Time</a>
+      <nav class="nav">
+        <a href="#schedule">Расписание</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </header>
+    <div class="hero__content">
+      <p class="hero__subtitle">Туристическое агентство</p>
+      <h1 class="hero__title">Приветствует Вас!</h1>
+      <a href="#schedule" class="btn">Купить билеты</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h3 class="about__question">Почему именно наше туристическое агентство?</h3>
+    <h2 class="title">Немного нашей уникальности</h2>
+    <div class="line"></div>
+    <p class="about__text">На нашем сайте вы можете просматривать расписание вылетов и прилётов, а также можете купить билеты и просмотреть нашу маленькую галерею .</p>
+    <div class="cards">
+      <div class="card"><img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?w=1200" alt=""><span class="card__name">Египет</span></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200" alt=""><span class="card__name">Дубай</span></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=1200" alt=""><span class="card__name">Испания</span></div>
+    </div>
+  </section>
+
+  <section class="schedule" id="schedule">
+    <h2 class="title">Расписание</h2>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Понедельник<th>Вторник<th>Среда<th>Четверг<th>Пятница<th>Суббота<th>Воскресенье<th>Откуда<th>Куда
+        <tr><td>8.10-12.15<td>-<td>7.15-11.20<td>-<td>8.10-12.15<td>14.00-17.10<td>-<td>г.Астана<td>Дубай
+        <tr><td>-<td>9.00-13.50<td>-<td>15.20-19.25<td>-<td>11.45-15.50<td>-<td>г.Астана<td>Испания
+        <tr><td>11.45-21.30<td>-<td>6.00-12.45<td>-<td>8.15-12.00<td>-<td>10.00-15.45<td>г.Астана<td>Сочи
+        <tr><td>-<td>1.30-5.40<td>-<td>2.10-6.25<td>-<td>3.30-7.40<td>-<td>г.Астана<td>Грузия
+        <tr><td>8.20-13.20<td>-<td>7.30-12.30<td>-<td>9.15-14.15<td>-<td>7.30-12.30<td>г.Астана<td>Греция
+        <tr><td>-<td>9.00-15.00<td>-<td>8.05-14.05<td>-<td>10.00-16.00<td>-<td>г.Астана<td>Бали
+      </table>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2 class="title">Галерея</h2>
+    <div class="diamonds">
+      <div class="row">
+        <div class="dia"><div class="diamond"><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1000" alt=""></div></div>
+        <div class="dia"><div class="diamond"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1000" alt=""></div></div>
+        <div class="dia"><div class="diamond"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1000" alt=""></div></div>
+      </div>
+      <div class="row row--bottom">
+        <div class="dia"><div class="diamond"><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1000" alt=""></div></div>
+        <div class="dia"><div class="diamond"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=1000" alt=""></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacts">
+    <div class="footer__icons">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p class="footer__bold">Наш адрес:</p>
+    <p>Казахстан</p>
+    <p>+7 771 245 34 56</p>
+    <p>г. Астана ул.Абая 148</p>
+    <p class="footer__copy">&copy;2022 Travel Time | Air</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('img').forEach((img, i) => img.onerror = () => img.src = 'https://picsum.photos/seed/' + i + '/1200/800');
+  </script>
+
+</body>
+</html>
